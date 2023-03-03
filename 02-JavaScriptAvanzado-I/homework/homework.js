@@ -1,12 +1,12 @@
-# Homework JavaScript Avanzado I
+// # Homework JavaScript Avanzado I
 
-## Scope & Hoisting
+// ## Scope & Hoisting
 
-Determiná que será impreso en la consola, sin ejecutar el código.
+// Determiná que será impreso en la consola, sin ejecutar el código.
 
-> Investiga cuál es la diferencia entre declarar una variable con `var` y directamente asignarle un valor.
+// > Investiga cuál es la diferencia entre declarar una variable con `var` y directamente asignarle un valor.
 
-```javascript
+// ```javascript
 x = 1;
 var a = 5;
 var b = 10;
@@ -26,9 +26,9 @@ var c = function (a, b, c) {
 c(8, 9, 10);
 console.log(b);
 console.log(x);
-```
 
-```javascript
+
+
 console.log(bar);
 console.log(baz);
 foo();
@@ -37,17 +37,16 @@ function foo() {
 }
 var bar = 1;
 baz = 2;
-```
 
-```javascript
+
 var instructor = 'Tony';
 if (true) {
    var instructor = 'Franco';
 }
 console.log(instructor);
-```
 
-```javascript
+
+
 var instructor = 'Tony';
 console.log(instructor);
 (function () {
@@ -57,9 +56,9 @@ console.log(instructor);
    }
 })();
 console.log(instructor);
-```
 
-```javascript
+
+
 var instructor = 'Tony';
 let pm = 'Franco';
 if (true) {
@@ -70,38 +69,37 @@ if (true) {
 }
 console.log(instructor);
 console.log(pm);
-```
 
-### Coerción de Datos
 
-¿Cuál crees que será el resultado de la ejecución de estas operaciones?:
+// ### Coerción de Datos
 
-```javascript
-6 / "3"
-"2" * "3"
-4 + 5 + "px"
-"$" + 4 + 5
-"4" - 2
-"4px" - 2
-7 / 0
-{}[0]
-parseInt("09")
-5 && 2
-2 && 5
-5 || 0
-0 || 5
-[3]+[3]-[10]
-3>2>1
-[] == ![]
-```
+// ¿Cuál crees que será el resultado de la ejecución de estas operaciones?:
 
-> Si te quedó alguna duda repasá con [este artículo](http://javascript.info/tutorial/object-conversion).
+// 6 / "3"
+// "2" * "3"
+// 4 + 5 + "px"
+// "$" + 4 + 5
+// "4" - 2
+// "4px" - 2
+// 7 / 0
+// {}[0]
+// parseInt("09")
+// 5 && 2
+// 2 && 5
+// 5 || 0
+// 0 || 5
+// [3]+[3]-[10]
+// 3>2>1
+// [] == ![]
 
-### Hoisting
 
-¿Cuál es el output o salida en consola luego de ejecutar este código? Explicar por qué:
+// > Si te quedó alguna duda repasá con [este artículo](http://javascript.info/tutorial/object-conversion).
 
-```javascript
+// ### Hoisting
+
+// ¿Cuál es el output o salida en consola luego de ejecutar este código? Explicar por qué:
+
+
 function test() {
    console.log(a);
    console.log(foo());
@@ -113,11 +111,11 @@ function test() {
 }
 
 test();
-```
 
-Y el de este código? :
 
-```javascript
+// Y el de este código? :
+
+
 var snack = 'Meow Mix';
 
 function getFood(food) {
@@ -129,13 +127,13 @@ function getFood(food) {
 }
 
 getFood(false);
-```
 
-### This
 
-¿Cuál es el output o salida en consola luego de ejecutar esté código? Explicar por qué:
+// ### This
 
-```javascript
+// ¿Cuál es el output o salida en consola luego de ejecutar esté código? Explicar por qué:
+
+
 var fullname = 'Juan Perez';
 var obj = {
    fullname: 'Natalia Nerea',
@@ -152,13 +150,13 @@ console.log(obj.prop.getFullname());
 var test = obj.prop.getFullname;
 
 console.log(test());
-```
 
-### Event loop
 
-Considerando el siguiente código, ¿Cuál sería el orden en el que se muestra por consola? ¿Por qué?
+// ### Event loop
 
-```javascript
+// Considerando el siguiente código, ¿Cuál sería el orden en el que se muestra por consola? ¿Por qué?
+
+
 function printing() {
    console.log(1);
    setTimeout(function () {
@@ -171,4 +169,4 @@ function printing() {
 }
 
 printing();
-```
+
